@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: 0.2s;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    /* background-repeat: no-repeat; */
+    /* height: 3000px; */
+    /* background-color: #60b9c9; */
+    height: 90vh;
+    background-image: url();
+    background-size: contain;
+    background: white;
+    background-image:
+        linear-gradient(45deg,#60b9c9 1.2px, transparent 1px),
+        linear-gradient(-45deg, #60b9c9 1.2px, transparent 1px);
+    background-size: 15px 15px;
+    background-position: 0 0, 0 0;
+}
+
+.border-color-theme{
+    border: 2px solid #60b9c9;
+}
+
+.color-theme{
+    color: #60b9c9;
+}
+
+.bg-theme{
+    background-color: #60b9c9;
+}
+
+.hover:hover{
+    color: #60b9c9;
+    cursor: pointer;
+    text-shadow: 0px 0px 5px white ;
+}
+
+.hover-img:focus{
+    cursor: pointer;
+    border: 2px solid #60b9c9;
+    box-shadow: 0px 0px 10px white;
+}
+
+/* Tab */
+.left-tab{
+    height: 100vh;
+    border: #60b9c9 5px solid;
+}
+
+.logo{
+    width: 100%;
+}
+
+.logo img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* .right-tab{
+    height: 100vh;
+    overflow: auto;
+
+} */
+/* End Tab */
+
+/* Nav */
+
+.nav-btn{
+    color: white;
+}
+
+/* Profile */
+.profile img{
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 100px;
+    object-fit: cover;
+    overflow: hidden;
+}
+/* End Profile */
+
+/* End Nav */
+
+.content{
+    height: 90vh;
+    overflow: auto;
+}
+

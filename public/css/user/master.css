@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    /* color: white; */
+    text-decoration: none;
+    transition: 0.5s;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.color-theme {
+    color: #60b9c9;
+}
+
+.border-color-theme{
+    border: 2px solid #60b9c9;
+}
+
+.bg-theme {
+    background-color: #60b9c9;
+}
+
+.like-hover:hover{
+    transform: scale(1.2);
+}
+
+.hover:hover {
+    color: #98d6e1;
+    /* text-shadow:0px 0px 20px white; */
+    position: relative;
+    display: inline-block;
+    transform: rotate(10deg);
+    cursor: pointer;
+}
+
+.hover-img:focus {
+    cursor: pointer;
+    border: 2px solid #60b9c9;
+    box-shadow: 0px 0px 10px white;
+}
+
+body {
+    /* background-repeat: no-repeat; */
+    /* height: 3000px; */
+    /* background-color: #60b9c9; */
+    background-image: url();
+    background-size: contain;
+    background: #60b9c9;
+    background-image:
+        linear-gradient(45deg,white 1px, transparent 1px),
+        linear-gradient(-45deg, white 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 0;
+}
+
+.nav {
+    position: fixed;
+    background-color: #ffffff10;
+    backdrop-filter: blur(15px);
+    z-index: 3;
+}
+
+.navigation {
+    width: 90%;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-dropdown {
+    margin-top: 3px;
+    position: absolute;
+    background-color: #60b9c9;
+    transition: 0.2s;
+    overflow: hidden;
+    width: 0px;
+    height: 0px;
+}
+
+.menu-dropdown>ul {
+    height: 100%;
+    overflow: auto;
+}
+
+/* Scroll Bar */
+.menu-dropdown ul::-webkit-scrollbar {
+    padding-top: 100px;
+    width: 3px;
+}
+
+
+.menu-dropdown ul::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 1px;
+}
+
+/* End Scroll Bar */
+
+#menu[type="checkbox"]:checked+.menu-dropdown {
+    width: 200px;
+    padding: 30px 0px 20px 30px;
+    border: white solid 4px;
+    border-radius: 10px 100px 10px 100px;
+    height: 45vh;
+    box-shadow: 3px 3px 20px #60b9c9;
+
+}
+
+/* Profile */
+.profile {
+    display: inline;
+    width: 10%
+}
+
+.profile img {
+    margin-right: 20px;
+    height: 100%;
+}
+
+.left-nav {
+    width: 30%;
+}
+
+.right-nav {
+    width: 20%;
+}
+
+.dropdown-menu i {
+    color: black;
+}
+
+/* End Profile */
+
+/* Banner Context */
+
+.banner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-context {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.context {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.context p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 55px;
+}
+
+.context .btn {
+    font-size: 25px;
+    background-color: #60b9c9;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* End Banner Context */
+
+/* Card Input Number */
+.number-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 140px;
+}
+
+.number-input [type="number"] {
+    border: none;
+    width: 50px;
+    text-align: center;
+}
+
+.number-input div {
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Hide the default number input arrows */
+.number-input input[type="number"]::-webkit-inner-spin-button,
+.number-input input[type="number"]::-webkit-outer-spin-button,
+.number-input input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.number-input input[type="number"] {
+    /* Optional: Add custom styling to the input */
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+
+
+@media screen and (max-width: 950px) {
+    .logo {
+        width: 20%;
+    }
+
+    .right-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .left-nav {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .nav-banner {
+        display: none;
+    }
+
+    .logo {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .navigation {
+        width: 80%;
+    }
+
+    .menu {
+        width: 20%;
+    }
+
+    .logo {
+        width: 40%;
+    }
+
+    .left-nav {
+        font-size: 8px;
+        width: 40%;
+    }
+
+    /* .left-nav{
+        display: none;
+    } */
+    .profile {
+        width: 30%;
+    }
+
+    .profile img {
+        margin-right: 2px;
+    }
+}
